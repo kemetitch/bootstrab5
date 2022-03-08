@@ -1,0 +1,187 @@
+:root{
+    --dark-color:#19283f;
+    --green-color:#33d1cc;
+    --red-color:#ff3150;
+    --yellow-color:#ffc400;
+    --section-color:#eff7fa;
+}
+.main-button{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    padding: 0.5rem 1rem;
+}
+.main-button:hover{
+    color: var(--yellow-color);
+}
+.main-head::after{
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 120px;
+    background-color: var(--green-color);
+}
+body{
+    font-family: "roboto";
+}
+/* start navpar */
+.navbar{
+    background-color: var(--dark-color);
+}
+.navbar .nav-item .nav-link{
+    color: white;
+}
+.navbar .nav-item .nav-link.active,
+.navbar .nav-item .nav-link:hover{
+color: var(--green-color);
+}
+.navbar .search{
+    border-left: 1px solid var(--green-color);
+}
+.navbar .search svg{
+    color: white;
+}
+.navbar .navbar-toggler{
+    color: white;
+    border-color: white;
+    font-size: 25px;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+/* end navpar */
+/* start landing */
+.landing{
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 72px);
+}
+/* end landing */
+/* start feauture */
+.feature .icon-holder{
+height: 200px;
+}
+.feature .icon-holder svg{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.feature .icon-holder .number{
+    font-size: 12rem;
+    color: var(--section-color);
+}
+.feature .icon-holder .pen{
+    color: var(--green-color)
+}
+.feature h4{
+    color: var(--yellow-color);
+}
+/* end feauture */
+/* start work */
+.work{
+    background-color: var(--section-color);
+}
+.work ul .active{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.work ul li{
+    transition: 0.3s;
+    cursor: pointer;
+}
+.work ul li:hover{
+    color: var(--red-color);
+}
+.work .box{
+    padding: 5px;
+    overflow: hidden;
+}
+.work .box::before{
+    content: attr(data-work);
+    position: absolute;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color: rgb(51 209 204 / 62%);
+    transition: 0.3s;
+    transform:translateX(calc(-100% - 5px));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.work .box:hover::before{
+    transform: translateX(0);
+}
+/* end work */
+/* start about us */
+.about-us .text{
+max-width: 650px;
+}
+/*end about us */
+/* start team */
+.team{
+    background-color: var(--section-color);
+}
+.team .teamhead{
+    color: var(--yellow-color);
+}
+.team .box h3{
+    background-color:var(--green-color);
+}
+/* end team */
+/* start start-pro */
+.start-pro{
+    background-color: var(--dark-color);
+}
+/* end start-pro */
+/* start ourblog */
+.our-blog .text{
+    border: 1px solid rgba(0,0,0,.125);
+}
+/* end ourblog */
+/* start subscripe */
+.subscribe {
+    background-color: var(--yellow-color);
+}
+.subscribe .one{
+    /* font-size: 1.20rem; */
+}
+.subscribe input[type="text"]{
+    border: none;
+    border-bottom: 1px solid white;
+}
+.subscribe input[type="text"]:focus{
+    outline: none;
+}
+.subscribe ::placeholder{
+    color: white;
+}
+.subscribe input[type="submit"]{
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+}
+/* end subscripe */
+footer{
+    background-color: var(--dark-color);
+}
+footer ul svg{
+    height: 20px;
+    width: 20px;
+}
+footer .face{
+    background-color: #1877f2;
+}
+footer .twit{
+    background-color: #1da1f2;
+}
+footer .lin{
+    background-color: #0077b5;
+}
+footer .you{
+    background-color: #ff0000;
+}
+footer .gre{
+color: var(--green-color);
+}
+footer .yel{
+    color: var(--yellow-color);
+}
